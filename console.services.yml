@@ -1,0 +1,5 @@
+services:
+  console.extend_example:
+    class: \WP\Console\Extend\Command\ExampleCommand
+    tags:
+      - { name: wordpress.command }

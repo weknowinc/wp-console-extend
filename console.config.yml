@@ -1,0 +1,9 @@
+#application:
+#  autowire:
+#    commands:
+#      forced:
+#        'extend:example':
+#          class: '\WP\Console\Extend\Command\ExampleCommand'
+#      name:
+#        'extend:example':
+#          class: '\WP\Console\Extend\Command\ExampleCommand'

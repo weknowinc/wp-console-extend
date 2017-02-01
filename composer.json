@@ -1,0 +1,34 @@
+{
+    "name": "wp/console-extend",
+    "description": "WP Console Extend",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Jesus Manuel Olivas",
+            "email": "jesus.olivas@gmail.com"
+        },
+        {
+            "name": "enzo - Eduardo Garcia",
+            "email": "enzo@enzolutions.com"
+        }
+    ],
+    "require": {
+        "eureka/component-yaml": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {"WP\\Console\\Extend\\": "src"}
+    },
+    "require-dev": {
+        "composer/installers": "^1.2"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "WP\\Console\\Extend\\Plugin\\ScriptHandler::dump"
+        ],
+        "post-update-cmd": [
+            "WP\\Console\\Extend\\Plugin\\ScriptHandler::dump"
+        ]
+    }
+}
